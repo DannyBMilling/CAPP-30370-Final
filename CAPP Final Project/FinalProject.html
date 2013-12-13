@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Final Project</title>
+  <style>
+
+@-webkit-keyframes colors {
+  0% {background-color:red;}
+  33% {background-color:yellow;}
+  66% {background-color:red;}
+  100% {background-color:yellow;}
+}
+
+@-webkit-keyframes borders {
+  25% {border-color:blue;}
+  75% {border-color:green;}
+}
+
+#potter {
+  padding:1em;
+  text-align:center;
+  color:#fff;
+  font-size:3em;
+  font-weight:bold;
+  background-color:red;
+  border:10px solid gray;
+  text-shadow:0 0 2px #000;
+  -webkit-animation:
+    borders 10s ease infinite,
+    colors 5s linear infinite alternate;
+}
+
+}
+    
+
+img:hover
+	{
+	-webkit-transform:translate(50px,50px) scale(1.5);
+}
+
+  </style>
+	<link rel="stylesheet" href="FinalProjectStyle.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <header><div id="potter">All Things Potter!</div></header>
+	
+<p> Welcome to an informational site about all things Harry Potter.  This site is a great way to learn about the Harry Potter World.  You can also hear my, Danny's, opinion on the different books and movies.  Enjoy!</p>
+
+	<p><li><a href="file://localhost/Users/DBMilling/Desktop/CAPP%20Final%20Project/Book.html"> BOOKS</a></p>
+	</li> <img id="MainBooks" src="MainHPBooks.jpg" title="Main Book" alt="MBook">
+
+	<p><li><a href="file://localhost/Users/DBMilling/Desktop/CAPP%20Final%20Project/Movie.html"> MOVIES</a></p>
+	</li><img id="MainMovies" src="MainHPMovie.jpg" title="Main Movie" alt="MMovies">
+
+	<p><li><a href="file://localhost/Users/DBMilling/Desktop/CAPP%20Final%20Project/Other.html"> ALL ELSE POTTER</a></p>
+	</li><img id="MainOther" src="OtherMain.jpg" title="Main Other" alt="MOther">
+
+<footer id="footer" class="site-footer vcard bordertop" role="contentinfo">
+    <span class="add">100 Main Building, Notre Dame, IN 46556</span>;
+    <span class="tel">(574)631-5000</span>;
+    <span class="email">donotreply@nd.edu</span>;
+  </footer>
+
+  <script>
+
+   $(window).on('load resize', function(){
+  	console.log('Width: ' + $(window).width() );
+	});
+  </script>
+
+</body>
+</html>
