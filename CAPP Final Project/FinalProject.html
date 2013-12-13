@@ -12,11 +12,15 @@
 <body>
   <header><div id="potter">All Things Potter!</div></header>
 
-<section id="section1">
-<p class="bold"> Welcome to an informational site about all things Harry Potter.  This site is a great way to learn about the Harry Potter World.  You can also hear my, Danny's, opinion on the different books and movies.  Enjoy!</p>
+<main>
+	<main role="main" class="main">
 
-<button class="b1">Make Text Bold</button>
+<section id="section1">
+<p class="bold"> Welcome to an informational site about all things Harry Potter.  This site is a great way to learn about the Harry Potter World.  You can also hear my, Danny's, opinion on the different books and movies. Enjoy!</p>
+
 <button class="b2">Unbold Text</button>
+<button class="b1">Make Text Bold</button>
+
 </section>
 
 	<p><li><a href="file://localhost/Users/DBMilling/Desktop/CAPP/CAPP-30370-Final/CAPP%20Final%20Project/Book.html"> BOOKS</a></p>
@@ -28,6 +32,7 @@
 	<p><li><a href="file://localhost/Users/DBMilling/Desktop/CAPP/CAPP-30370-Final/CAPP%20Final%20Project/Other.html"> ALL ELSE POTTER</a></p>
 	</li><img id="MainOther" src="OtherMain.jpg" title="Main Other" alt="MOther">
 
+</main>
 <footer id="footer" class="site-footer vcard bordertop" role="contentinfo">
     <span class="add">100 Main Building, Notre Dame, IN 46556</span>;
     <span class="tel">(574)631-5000</span>;
@@ -48,6 +53,14 @@
 	$('.b2').on('click', function(){
 	p.removeClass('bold');
 	console.log(p);
+	});
+
+	var mainimg = $('.main').find('img');
+	console.log(mainimg);
+	$(mainimg).on('click', function() {
+		console.log('Width: ' + $(this).width());
+		console.log('Height: ' + $(this).height());
+		console.log('Alt Text: ' + $(this).attr('alt'));
 	});
 
   </script>

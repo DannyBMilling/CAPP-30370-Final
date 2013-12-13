@@ -9,9 +9,9 @@
 </head>
 <body>
 
-	<li><a href="file://localhost/Users/DBMilling/Desktop/CAPP%20Final%20Project/FinalProject.html"> Main Page</a>
+	<li><a href="file://localhost/Users/DBMilling/Desktop/CAPP/CAPP-30370-Final/CAPP%20Final%20Project/FinalProject.html"> Main Page</a>
 
-  <header><div id="boo">Harry Potter Books</div>
+  <header><div id="boo">Harry Potter Books</div></header>
 
     <div class="Book">
 	<nav>
@@ -41,6 +41,8 @@
 	</ul>
 	</navigation>
 	</nav>
+	<main>
+	  <main role="main" class="main">
 
 
 	<div class="section section1">	
@@ -89,7 +91,8 @@
       </section>
     </div>
   </div>
-</header>
+</main>
+
 
 <footer id="footer" class="site-footer vcard bordertop" role="contentinfo">
     <span class="add">100 Main Building, Notre Dame, IN 46556</span>;
@@ -101,12 +104,25 @@
    $(window).on('load resize', function(){
   	console.log('Width: ' + $(window).width() );
 	});
-   var book4 = $('#Book4');
-    $('#Book4').on('click', function(){
-	console.log('Width: ' + $book4.width() ):
-	console.log('Height: ' + $(book4).height() );
-	console.log($book4.attr('alt));
+	
+	var main = $('.main').find('h3');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		//console.log('Color: ' +
+		//console.log('font-size: ' +
 	});
+	
+	var mainimg = $('.main').find('img');
+	console.log(mainimg);
+	$(mainimg).on('click', function() {
+		console.log('Width: ' + $(this).width());
+		console.log('Height: ' + $(this).height());
+		console.log('Alt Text: ' + $(this).attr('alt'));
+	});
+	
+	
+
+	
   </script>
 
 </body>

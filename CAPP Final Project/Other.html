@@ -10,9 +10,9 @@
 
 </head>
 <body>
-	<li><a href="file://localhost/Users/DBMilling/Desktop/CAPP%20Final%20Project/FinalProject.html"> Main Page</a>
+	<li><a href="file://localhost/Users/DBMilling/Desktop/CAPP/CAPP-30370-Final/CAPP%20Final%20Project/FinalProject.html"> Main Page</a>
 
-  <header><div id="oth">All Else Potter</div>
+  <header><div id="oth">All Else Potter</div></header>
       <div class="Other">
 	<nav>
 	<navigation role="navigation" class="nag">
@@ -29,6 +29,9 @@
 	</ul>
 	</navigation>
 	</nav>
+	
+	<main>
+	<main role="main" class="main">
 
       <section id="park" class="s s1">
 
@@ -53,7 +56,7 @@
 	<img id="Mus2" src="HPMus2.jpg" title="Musical 2" alt="Musical2"></p>
       </section>
 </div>
-</header>
+</main>
 
 <footer id="footer" class="site-footer vcard bordertop" role="contentinfo">
     <span class="add">100 Main Building, Notre Dame, IN 46556</span>;
@@ -65,7 +68,16 @@
    $(window).on('load resize', function(){
   	console.log('Width: ' + $(window).width() );
 	});
-  </script>
+  
+	var mainimg = $('.main').find('img');
+	console.log(mainimg);
+	$(mainimg).on('click', function() {
+		console.log('Width: ' + $(this).width());
+		console.log('Height: ' + $(this).height());
+		console.log('Alt Text: ' + $(this).attr('alt'));
+	});
+
+</script>
 
 </body>
 </html>
