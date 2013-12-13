@@ -7,6 +7,10 @@
 img {max-width: 100%;}
   
 
+	img:hover{
+	-webkit-transform:translate(50px,50px) scale(1.5);
+}
+
 @-webkit-keyframes colors {
   0% {background-color:red;}
   33% {background-color:yellow;}
@@ -19,7 +23,7 @@ img {max-width: 100%;}
   75% {border-color:green;}
 }
 
-#potter {
+#mov {
   padding:1em;
   text-align:center;
   color:#fff;
@@ -32,36 +36,22 @@ img {max-width: 100%;}
     borders 10s ease infinite,
     colors 5s linear infinite alternate;
 }
-
 }
-    
-
-img:hover
-	{
-	-webkit-transform:translate(50px,50px) scale(1.5);
-}
-
 
 
 @media only screen and (min-width: 700px)
   {
-       p {background: white; opacity: 1;}
-    footer {color: black; background: white; opacity: 1;}
-    body {background-image:url(BGPotter.jpg); background-size: repeat;}
+   body {background-color: blue;}
 }
 
 @media only screen and (min-width: 1000px)
   {
-    p {background: white; opacity: 1;}
-    footer {color: black; background: white; opacity: 1;}
-    body {background-image:url(BGPotter.jpg); background-size: repeat;}
+    body {background-color:green;}
 
 }
 @media only screen and (max-width: 700px)
   {
-    p {background: white; opacity: 1;}
-    footer {color: black; background: white; opacity: 1;}
-    body {background-image:url(BGPotter.jpg); background-size: repeat;}
     
+    body {background-color:gold;}
   
   }
