@@ -46,6 +46,7 @@ img:hover
 @media only screen and (min-width: 700px)
   {
        p {background: white; opacity: 1;}
+	li {background: white; opacity: 1;}
     footer {color: black; background: white; opacity: 1;}
     body {background-image:url(BGPotter.jpg); background-size: repeat;}
 }
@@ -53,6 +54,7 @@ img:hover
 @media only screen and (min-width: 1000px)
   {
     p {background: white; opacity: 1;}
+	li {background: white; opacity: 1;}
     footer {color: black; background: white; opacity: 1;}
     body {background-image:url(BGPotter.jpg); background-size: repeat;}
 
@@ -60,6 +62,7 @@ img:hover
 @media only screen and (max-width: 700px)
   {
     p {background: white; opacity: 1;}
+	li {background: white; opacity: 1;}
     footer {color: black; background: white; opacity: 1;}
     body {background-image:url(BGPotter.jpg); background-size: repeat;}
     
