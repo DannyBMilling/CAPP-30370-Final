@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<header role="banner" class="site-header">
   <meta charset="utf-8">
   <title>Final Project</title>
 
@@ -10,10 +11,10 @@
 </head>
 
 <body>
-  <header><div id="potter">All Things Potter!</div></header>
+	<div id="potter">All Things Potter!</div>
 
 <main>
-	<main role="main" class="main">
+	<main role="contentinfo" class="main">
 
 <section id="section1">
 <p class="bold"> Welcome to an informational site about all things Harry Potter.  This site is a great way to learn about the Harry Potter World.  You can also hear my, Danny's, opinion on the different books and movies. Enjoy!</p>
@@ -55,6 +56,43 @@
 	console.log(p);
 	});
 
+	var main = $('.main').find('h1');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h2');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h3');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h4');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h5');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h6');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+
 	var mainimg = $('.main').find('img');
 	console.log(mainimg);
 	$(mainimg).on('click', function() {
@@ -64,6 +102,6 @@
 	});
 
   </script>
-
+</header>
 </body>
 </html>

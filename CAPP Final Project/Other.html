@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+<header>
+	<header role="banner" class="site-header">
   <meta charset="utf-8">
   <title>All Else Potter</title>
 	
@@ -31,7 +33,7 @@
 	</nav>
 	
 	<main>
-	<main role="main" class="main">
+	<main role="contentinfo" class="main">
 
       <section id="park" class="s s1">
 
@@ -69,6 +71,43 @@
   	console.log('Width: ' + $(window).width() );
 	});
   
+	var main = $('.main').find('h1');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h2');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h3');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h4');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h5');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+	var main = $('.main').find('h6');
+	$(main).on('click', function() {
+		console.log('Text: ' + $(this).text());
+		console.log('Color: ' + $(this).css('color'));
+		console.log('font-size: ' + $(this).css('font-size'));
+	});
+
 	var mainimg = $('.main').find('img');
 	console.log(mainimg);
 	$(mainimg).on('click', function() {
@@ -78,6 +117,6 @@
 	});
 
 </script>
-
+</header>
 </body>
 </html>

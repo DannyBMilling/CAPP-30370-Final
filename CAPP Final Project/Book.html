@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<header role="banner" class="site-header">
   <meta charset="utf-8">
   <title>Books</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11,7 +12,7 @@
 
 	<li><a href="file://localhost/Users/DBMilling/Desktop/CAPP/CAPP-30370-Final/CAPP%20Final%20Project/FinalProject.html"> Main Page</a>
 
-  <header><div id="boo">Harry Potter Books</div></header>
+  <div id="boo">Harry Potter Books</div>
 
     <div class="Book">
 	<nav>
@@ -43,7 +44,7 @@
 	</nav>
 
 	<main>
-	  <main role="main" class="main">
+	  <main role="content info" class="main">
 
 
 	<div class="section section1">	
@@ -142,12 +143,6 @@
 		console.log('Color: ' + $(this).css('color'));
 		console.log('font-size: ' + $(this).css('font-size'));
 	});
-	var main = $('.main').find('h1');
-	$(main).on('click', function() {
-		console.log('Text: ' + $(this).text());
-		console.log('Color: ' + $(this).css('color'));
-		console.log('font-size: ' + $(this).css('font-size'));
-	});
 	
 	var mainimg = $('.main').find('img');
 	console.log(mainimg);
@@ -161,6 +156,6 @@
 
 	
   </script>
-
+</header>
 </body>
 </html>
