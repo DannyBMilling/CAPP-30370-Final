@@ -4,7 +4,7 @@
   	console.log('Width: ' + $(window).width() );
 	});
 
-	var p = $('#section1').find('p');
+	var p = $('.section1').find('p');
 	$('.b1').on('click', function(){
 	p.addClass('bold');
 	console.log(p);
