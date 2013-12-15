@@ -27,11 +27,11 @@ img {max-width: 100%;}
   padding:1em;
   text-align:center;
   color:#fff;
-  font-size:3em;
+  font-size:3.75em;
   font-weight:bold;
   background-color:red;
   border:10px solid gray;
-  text-shadow:0 0 2px #000;
+  text-shadow:0 0 5px #000;
   -webkit-animation:
     borders 10s ease infinite,
     colors 5s linear infinite alternate;
@@ -41,30 +41,19 @@ img {max-width: 100%;}
 
 @media only screen and (min-width: 700px)
   {
-   body {background-color: blue;}
-	.section .col{float: left; width: 47%;}
-	.section1 .col2{margin-right: 2%;}
-	.section1 .col1{margin: 0 2% 0 0;}
-	.section1 .col4{margin-right: 2%;}
-	.section1 .col3{margin: 0 2% 0 0;}
-	.section1 .col6{margin-right: 2%;}
-	.section1 .col5{margin: 0 2% 0 0;}
-	.section {overflow: hidden;}
+	body {background-color: blue;}
+	.col{ display: inline-block; width: 45%; height: 100%; margin: 2%;}
+	.main {overflow: hidden;}
 	.footer {top: 100%, left:100%;}
 }
 
 @media only screen and (min-width: 1000px)
   {
-    body {background-color:green;}
-	.section .col{float: left; width: 30%;}
-	.section1 .col3{margin-right: 3%;}
-	.section1 .col2{margin: 0 3% 0 0;}
-	.section1 .col1{margin: 0 3% 0 0;}
-	.section1 .col6{margin-right: 3%;}
-	.section1 .col5{margin: 0 3% 0 0;}
-	.section1 .col4{margin: 0 3% 0 0;}
-	.section {overflow: hidden;}
+    	body {background-color:green;}
+	.col{ display: inline-block; width: 29%; margin: 2%;}
+	.main {overflow: hidden;}
 	.footer {top: 100%, left:100%;}
+
 
 }
 @media only screen and (max-width: 700px)
