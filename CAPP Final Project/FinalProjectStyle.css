@@ -53,7 +53,7 @@ img:hover
 	body {background-color: blue;}
 	.col{ display: inline-block; width: 45%; height: 100%; margin: 2%;}
 	.main {overflow: hidden;}
-	.footer {top: 100%, left:100%;}
+	
 }
 
 @media only screen and (min-width: 1000px)
@@ -65,7 +65,7 @@ img:hover
 	body {background-color:green;}
 	.col{ display: inline-block; width: 29%; margin: 2%;}
 	.main {overflow: hidden;}
-	.footer {top: 100%, left:100%;}
+	
 
 
 }

@@ -5,13 +5,12 @@
 	});
 
 	var p = $('.section1').find('p');
+	console.log(p);
 	$('.b1').on('click', function(){
 	p.addClass('bold');
-	console.log(p);
 	});
 	$('.b2').on('click', function(){
 	p.removeClass('bold');
-	console.log(p);
 	});
 
 	var main = $('.main').find('h1');
