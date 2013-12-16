@@ -16,3 +16,5 @@ When ever the mouse hovers on an image, the image is enlarged by 1.5
 The main page has a background image that is repeated throughout the page
 
 On the main page, there is a button to unbold the text.  There is also a second button that can re-bold the text.
+
+Note: The HTML Validator says there is a problem for all my <script> code, but your coworker and I could not find the problem.  The javascript works as well.
